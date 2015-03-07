@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minWidth="732.0" prefHeight="445.0" prefWidth="732.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="presentation.MainWindowController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TitledPane animated="false" prefHeight="420.0" prefWidth="507.0" text="Surf Image" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="395.0" prefWidth="728.0">
+          <children>
+            <TitledPane animated="false" layoutX="525.0" layoutY="0.0" text="Car image">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="175.0" prefWidth="202.0">
+                  <children>
+                    <ImageView fx:id="carImageView" fitHeight="176.0" fitWidth="202.0000762939453" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="526.0" layoutY="198.0" text="Emblem image">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <ImageView fx:id="emblemImageView" fitHeight="176.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </TitledPane>
+            <ImageView fx:id="mainView" fitHeight="373.0" fitWidth="504.9999084472656" pickOnBounds="true" preserveRatio="false" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="10.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <MenuBar prefHeight="25.0" prefWidth="732.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#openCarImage" text="Open car image" fx:id="menuItemOpenCarImage" />
+            <MenuItem mnemonicParsing="false" onAction="#openEmblemImage" text="Open emblem image" fx:id="menuItemOpenEmblemImage" />
+            <MenuItem mnemonicParsing="false" onAction="#run" text="Run" fx:id="menuItemRun" />
+            <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" fx:id="menuItemExit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Preferences">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Threshold">
+              <graphic>
+                <TextField prefWidth="200.0" />
+              </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" text="Octaves">
+              <graphic>
+                <TextField prefWidth="200.0" />
+              </graphic>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" text="Balance">
+              <graphic>
+                <TextField prefWidth="200.0" />
+              </graphic>
+            </MenuItem>
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Accordion expandedPane="$null" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="503.0" AnchorPane.rightAnchor="229.0" AnchorPane.topAnchor="25.0" />
+  </children>
+</AnchorPane>
