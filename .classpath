@@ -4,5 +4,12 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/mockito-core-1.9.0-rc1.jar"/>
+	<classpathentry kind="lib" path="lib/objenesis-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/maven-compiler-plugin-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-math3-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-math-2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
